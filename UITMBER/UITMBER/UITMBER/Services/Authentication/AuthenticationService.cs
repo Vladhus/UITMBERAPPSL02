@@ -8,7 +8,7 @@ using Xamarin.Forms;
 
 namespace UITMBER.Services.Authentication
 {
-    public class AuthenticationService : IAuthenticationService
+    public class AuthenticationService : IUFLocationService
     {
 
         public IRequestService _requestService => DependencyService.Get<IRequestService>();

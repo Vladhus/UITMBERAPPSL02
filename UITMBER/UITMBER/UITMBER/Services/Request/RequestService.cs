@@ -51,6 +51,20 @@ namespace UITMBER.Services.Request
 
         }
 
+        public async Task<TResult> DeleteAsync<TResult>(string uri)
+        {
+            HttpClient client = CreateHttpClient();
+
+            var response = await client.DeleteAsync(uri);
+
+            await HandleResponse(response);
+
+            var content = await response.Content.ReadAsStringAsync();
+
+            return JsonConvert.DeserializeObject<TResult>(content);
+
+        }
+
       
         public Task<TResult> PostAsync<TResult>(string uri, TResult data)
         {

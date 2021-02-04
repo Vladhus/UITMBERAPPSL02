@@ -37,7 +37,7 @@ namespace UITMBER
             DependencyService.Register<MockDataStore>();
 
             DependencyService.Register<IRequestService, RequestService>();
-            DependencyService.Register<IAuthenticationService, AuthenticationService>();
+            DependencyService.Register<IUFLocationService, AuthenticationService>();
             
         }
 

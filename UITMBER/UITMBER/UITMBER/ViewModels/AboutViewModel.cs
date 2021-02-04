@@ -9,7 +9,7 @@ namespace UITMBER.ViewModels
 {
     public class AboutViewModel : BaseViewModel
     {
-        public IAuthenticationService _authService => DependencyService.Get<IAuthenticationService>();
+        public IUFLocationService _authService => DependencyService.Get<IUFLocationService>();
 
         public AboutViewModel()
         {

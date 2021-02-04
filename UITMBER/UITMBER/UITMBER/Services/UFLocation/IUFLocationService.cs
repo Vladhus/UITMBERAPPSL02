@@ -4,10 +4,10 @@ using System.Text;
 using System.Threading.Tasks;
 using UITMBER.Models.Authentication;
 
-namespace UITMBER.Services.Authentication
+namespace UITMBER.Services.UFLocation
 {
     public  interface IUFLocationService
     {
-        Task<bool> Authenticate(AuthenticationRequest input);
+        Task<bool> DeleteLocation(long id);
     }
 }
